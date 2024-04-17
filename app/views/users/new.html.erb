@@ -1,0 +1,24 @@
+<%= javascript_include_tag ("handle_create_user.js") %>
+
+<%= Time.now() %>
+
+<h1>New user</h1>
+
+<%= render "form", user: @user %>
+
+<br>
+
+<div>
+  <%= link_to "Back to users", users_path %>
+</div>
+
+
+<hr>
+
+<br>
+
+<br>
+
+<div id="all_users">
+  <%= render partial:"all_users"%>
+</div>
